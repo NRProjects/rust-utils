@@ -1,0 +1,7 @@
+[package]
+name = "rust-utils"
+description = "Collection of my utils I use in my projects"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
