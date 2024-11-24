@@ -5,7 +5,7 @@ use colored::Colorize;
 
 pub fn log(msg: impl std::fmt::Display) {
     let time = DateTime::<Local>::from(SystemTime::now())
-        .format("%Y-%m-%d %H:%M:%S")
+        .format("%m-%d-%Y %H:%M:%S")
         .to_string();
     
     println!("[{}] {} {}", 
@@ -17,7 +17,7 @@ pub fn log(msg: impl std::fmt::Display) {
 
 pub fn warn(msg: impl std::fmt::Display) {
     let time = DateTime::<Local>::from(SystemTime::now())
-        .format("%Y-%m-%d %H:%M:%S")
+        .format("%m-%d-%Y %H:%M:%S")
         .to_string();
 
     println!("[{}] {} {}", 
@@ -29,7 +29,7 @@ pub fn warn(msg: impl std::fmt::Display) {
 
 pub fn error(msg: impl std::fmt::Display) {
     let time = DateTime::<Local>::from(SystemTime::now())
-        .format("%Y-%m-%d %H:%M:%S")
+        .format("%m-%d-%Y %H:%M:%S")
         .to_string();
 
     println!("[{}] {} {}", 
@@ -41,7 +41,7 @@ pub fn error(msg: impl std::fmt::Display) {
 
 pub fn success(msg: impl std::fmt::Display) {
     let time = DateTime::<Local>::from(SystemTime::now())
-        .format("%Y-%m-%d %H:%M:%S")
+        .format("%m-%d-%Y %H:%M:%S")
         .to_string();
 
     println!("[{}] {} {}", 
